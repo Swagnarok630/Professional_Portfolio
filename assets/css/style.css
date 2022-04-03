@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Going for a darkish theme */
+body {
+    background-color: #1B1B1B;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background: #3F403F; 
+}
+
+/* Adjusting size of text and color. Padding for more space */
+nav span {
+    font-size: 50px;
+    background: #FFC58F;
+    color: #1B1B1B;
+    font-weight: bold;
+    padding: 25px 75px 25px 75px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    height: 100px;
+    width: 750px;
+    justify-content: space-evenly;
+}
+
+li {
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+    color: #FFC58F;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.background {
+    background-image: url("https://images.unsplash.com/photo-1644322749926-66ac55e2913e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80")
+}
