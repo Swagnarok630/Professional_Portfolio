@@ -16,13 +16,13 @@ nav {
     background: #3F403F; 
 }
 
-/* Adjusting size of text and color. Padding for more space */
+/* Adjusting size of text and color. Specific padding for more space on the left and right */
 nav span {
     font-size: 50px;
     background: #FFC58F;
     color: #1B1B1B;
     font-weight: bold;
-    padding: 25px 75px 25px 75px;
+    padding: 25px 100px 25px 100px;
 }
 
 ul {
@@ -33,6 +33,7 @@ ul {
     justify-content: space-evenly;
 }
 
+/* Gave heignt to ul element so that line-height with text aling would center here */
 li {
     display: inline-block;
     line-height: 100px;
@@ -47,6 +48,104 @@ ul a {
     text-decoration: none;
 }
 
-.background {
-    background-image: url("https://images.unsplash.com/photo-1644322749926-66ac55e2913e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80")
+/* Displaying as flex and setting the justify and align so that element feature-title will align accordingly on X and Y axis */
+.feature {
+    height: 300px;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1647025640481-6f97b1033df1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");
+    background-position: center center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.feature-title {
+    background-color: #8EA1F7;
+    padding: 5px 10px;
+    margin: 30px 35px;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+main section {
+    display: flex;
+    margin: 30px 125px;
+    justify-content: space-between;
+}
+
+main section .title {
+    font-size: 40px;
+    width: 15%;
+    border-right: solid 5px #E0C8FF;
+    text-align: right;
+    padding-right: 40px;
+    color: #E0C8FF;
+}
+
+main section .content {
+    width: 85%;
+    padding-left: 40px;
+}
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1 0 300px;
+    margin: 10px;
+    height: 200px;
+    background-color: #FFC58F;
+    position: relative;
+}
+
+.project.star {
+    flex: 2 1 800px;
+}
+
+.star {
+    background-image: url(../images/matrix.jpg);
+}
+
+.fight {
+    background-image: url(../images/TE.jpg);
+    background-position: center center;
+}
+
+.games {
+    background-image: url(../images/callingcard.jpg);
+    background-position: center center;
+}
+
+.organize {
+    background-image: url(../images/inventory.jpg);
+    background-position: center center;
+}
+
+.run {
+    background-image: url(../images/bruce-lee.jpg);
+    background-position: center center;
+}
+
+.project-name {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    background-color: #FFC58F;
+    padding: 20px;
+}
+
+.contact-info ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-info li {
+    color: #8EA1F7;
 }
