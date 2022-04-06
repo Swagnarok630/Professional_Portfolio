@@ -76,7 +76,7 @@ main section {
 
 main section .title {
     font-size: 40px;
-    width: 15%;
+    width: 25%;
     border-right: solid 5px #E0C8FF;
     text-align: right;
     padding-right: 40px;
@@ -84,7 +84,7 @@ main section .title {
 }
 
 main section .content {
-    width: 85%;
+    width: 70%;
     padding-left: 40px;
 }
 
@@ -107,26 +107,31 @@ main section .content {
 
 .star {
     background-image: url(../images/matrix.jpg);
+    border: solid 3px #FFC58F;
 }
 
 .fight {
     background-image: url(../images/TE.jpg);
     background-position: center center;
+    border: solid 3px #FFC58F;
 }
 
 .games {
     background-image: url(../images/callingcard.jpg);
     background-position: center center;
+    border: solid 3px #FFC58F;
 }
 
 .organize {
     background-image: url(../images/inventory.jpg);
     background-position: center center;
+    border: solid 3px #FFC58F;
 }
 
 .run {
     background-image: url(../images/bruce-lee.jpg);
     background-position: center center;
+    border: solid 3px #FFC58F;
 }
 
 .project-name {
@@ -139,13 +144,18 @@ main section .content {
 
 .contact-info ul {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
 }
 
 .contact-info li {
     color: #8EA1F7;
+}
+
+@media screen and (max-width: 768px) {
+
 }
