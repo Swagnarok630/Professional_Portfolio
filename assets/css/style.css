@@ -9,20 +9,31 @@ body {
     background-color: #1B1B1B;
 }
 
-nav {
+/* Adjusting size of text and color. Specific padding for more space on the left and right */
+header {
     display: flex;
-    padding: 10px;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     background: #3F403F; 
 }
 
-/* Adjusting size of text and color. Specific padding for more space on the left and right */
-nav span {
+header span {
     font-size: 50px;
     background: #FFC58F;
     color: #1B1B1B;
     font-weight: bold;
     padding: 25px 100px 25px 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #3F403F; 
 }
 
 ul {
@@ -60,6 +71,7 @@ ul a {
     text-align: right;
 }
 
+/* Background banner and special title within */
 .feature-title {
     background-color: #8EA1F7;
     padding: 5px 10px;
@@ -72,20 +84,34 @@ main section {
     display: flex;
     margin: 30px 125px;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main section .content p {
+    color: #8EA1F7;
+    flex-wrap: wrap;
+}
+
+main section .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 main section .title {
+    flex: 0 0 25%;
     font-size: 40px;
-    width: 25%;
     border-right: solid 5px #E0C8FF;
     text-align: right;
     padding-right: 40px;
     color: #E0C8FF;
+    flex-wrap: wrap;
 }
 
 main section .content {
-    width: 70%;
+    flex: 0 0 65%;
     padding-left: 40px;
+    flex-wrap: wrap;
 }
 
 .work-container {
@@ -94,7 +120,7 @@ main section .content {
 }
 
 .project {
-    flex: 1 0 300px;
+    flex: 1 0 400px;
     margin: 10px;
     height: 200px;
     background-color: #FFC58F;
@@ -103,10 +129,12 @@ main section .content {
 
 .project.star {
     flex: 2 1 800px;
+    height: 400px;
 }
 
 .star {
     background-image: url(../images/matrix.jpg);
+    background-position: center center;
     border: solid 3px #FFC58F;
 }
 
@@ -142,6 +170,10 @@ main section .content {
     padding: 20px;
 }
 
+div.project-name h3, div.project-name span{
+    color: #1B1B1B;
+}
+
 .contact-info ul {
     display: flex;
     flex-wrap: wrap;
@@ -156,6 +188,45 @@ main section .content {
     color: #8EA1F7;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
+    header {
+        justify-content: center;
+        text-align: center;
+      }
+    
+    span {
+        width: 100%;
+    }
 
+    main section .content, main section .title {
+        flex: 0 0 100%;
+        text-align: left;
+        padding: 5px;
+    }
+
+    main section .title {
+        border-right: none;
+        border-bottom: solid 3px #E0C8FF;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .feature {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .project {
+        flex: 0 0 100%;
+    }
+
+    .project.star {
+        height: 200px;
+        flex: 1 0 100%;
+    }
+
+    .contact-info ul {
+        flex-direction: column;
+    }
 }
