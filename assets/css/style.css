@@ -133,31 +133,31 @@ main section .content {
 }
 
 .star {
-    background-image: url(../images/matrix.jpg);
+    background-image: url(../images/pstart.png);
     background-position: center center;
     border: solid 3px #FFC58F;
 }
 
-.fight {
-    background-image: url(../images/TE.jpg);
+.weather {
+    background-image: url(../images/weatherdefault.png);
     background-position: center center;
     border: solid 3px #FFC58F;
 }
 
-.games {
-    background-image: url(../images/callingcard.jpg);
+.planner {
+    background-image: url(../images/plannerdefault.png);
     background-position: center center;
     border: solid 3px #FFC58F;
 }
 
-.organize {
-    background-image: url(../images/inventory.jpg);
+.quiz {
+    background-image: url(../images/quizdefault.png);
     background-position: center center;
     border: solid 3px #FFC58F;
 }
 
-.run {
-    background-image: url(../images/bruce-lee.jpg);
+.password {
+    background-image: url(../images/passgendefault.png);
     background-position: center center;
     border: solid 3px #FFC58F;
 }
