@@ -1,9 +1,13 @@
-# homework-2-SwagDL
+# Professional-Portfolio
 
-Homework assignment to create a portfolio page for ourselves.
-Included items:
-   -Recent photo of myself
-   -Navigation bar
-   -Multiple sections referring to myself, my work, and my contact info
-   -Applications/features that I've worked on
-   -Accessibility to different viewports
+Simple website portfolio using basic HTML and CSS to format. Portfolio deployed [here](https://swagnarok630.github.io/Professional_Portfolio/)
+
+## Criteria
+
+* Navigation bar
+* An about me section
+* Section for recent works
+   * Links to each work
+* Section for my contact info
+   * Links to Github profile and Linkdn profile
+* Accessibility to different viewports
