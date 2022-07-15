@@ -132,8 +132,14 @@ main section .content {
     height: 400px;
 }
 
-.star {
+.star.one {
     background-image: url(../images/pstart.png);
+    background-position: center center;
+    border: solid 3px #FFC58F;
+}
+
+.star.two {
+    background-image: url(../images/p2start.png);
     background-position: center center;
     border: solid 3px #FFC58F;
 }
